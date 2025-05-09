@@ -1,0 +1,21 @@
+doctype html
+html
+  head
+    title= title
+    link(rel="stylesheet", href="/css/style.css")
+  body
+    h1 Create a New Custom Object Record
+    form(action="/update-cobj", method="POST")
+      div
+        label(for="game_name") Name:
+        input(type="text", name="game_name", required=true)
+      div
+        label(for="game_category") Category:
+        input(type="text", name="game_category", required=true)
+      div
+        label(for="game_type") Type:
+        input(type="text", name="game_type", required=true)
+      div
+        button(type="submit") Submit
+    br
+    a(href="/") Return to the homepage
